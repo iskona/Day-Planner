@@ -44,7 +44,7 @@ $(document).ready(function () {
             $(this).children(".user-input").addClass("past");
         } else if (hourId === currentHour) {
             $(this).children(".user-input").addClass("present");
-            // $(this).children(".user-input").value("Current hour");
+            $(this).children(".user-input").attr("placeholder", "Current hour");
         } else {
             $(this).children(".user-input").addClass("future");
         }
